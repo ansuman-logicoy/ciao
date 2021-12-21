@@ -12,6 +12,6 @@ class CheckMailer < ApplicationMailer
     @name = params[:name]
     @status_before = params[:status_before]
     @status_after = params[:status_after]
-    mail(subject: "[ciao] #{@name}: Status changed (#{@status_after})")
+    mail(subject: "[LogiCoy] #{@name}: Status changed to (#{@status_after})")
   end
 end
